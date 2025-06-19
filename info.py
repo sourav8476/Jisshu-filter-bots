@@ -14,28 +14,28 @@ def is_enabled(value, default):
     
 # Main
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
+API_ID = int(environ.get('API_ID', '24579269'))
+API_HASH = environ.get('API_HASH', '99dff6c471774c2be6ff3d4623a6c0c0')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 PORT = environ.get('PORT', '8082')
 
 # Owners 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5672857559').split()]
-OWNER_USERNAME = environ.get('OWNER_USERNAME', 'IM_JISSHU') # without @ or https://t.me/ 
-USERNAME = environ.get('USERNAME', "") # ADMIN USERNAME
+OWNER_USERNAME = environ.get('OWNER_USERNAME', 'Sourav00782') # without @ or https://t.me/ 
+USERNAME = environ.get('USERNAME', "Sourav00876") # ADMIN USERNAME
 
 # Database Channel 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 
 # ForceSub Channel & Log Channels
-AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', ''))
+AUTH_CHANNEL = int(environ.get('AUTH_CHANNEL', '-1002152956062'))
 AUTH_REQ_CHANNEL = int(environ.get('AUTH_REQ_CHANNEL', ''))
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '')) 
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002251810897'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002335049872')) 
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002335049872'))
 
 # MongoDB 
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://souravbosu489:zhsZgesgojjn1trX@cluster0.qts6o.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 
 # Files index database url
@@ -50,8 +50,8 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001864434358')) 
 
 # Added Link Here Not Id 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '')
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', '')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/movierequestgroupMZ')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/MovierequestgroupHQ')
 
 # Verification
 IS_VERIFY = is_enabled('IS_VERIFY', True)
